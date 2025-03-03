@@ -5,7 +5,7 @@
 
 ## Writeup
 
-Looking at the challenge description, I knew I had to work with the **btl2cap protocol** (Bluetooth Logical Link Control and Adaptation Protocol L2CAP).
+Looking at the challenge description, I knew I had to work with the **btl2cap protocol** (Bluetooth Logical Link Control and Adaptation Protocol L2CAP).  
 With **tshark** (the command line version of Wireshark) and some further **grepping** and **cutting** I can get the flag.
 
 ```bash
