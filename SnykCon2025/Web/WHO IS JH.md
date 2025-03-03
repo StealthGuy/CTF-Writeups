@@ -1,8 +1,8 @@
 # WHO IS JH
 ![Image](https://github.com/user-attachments/assets/3020b1a6-c91c-4d28-bcb8-8e0290fca5eb)
 
-Attachment: [challenge.zip](https://github.com/user-attachments/files/19043268/challenge.zip)  
-Password: **snyk-ftf-2025**
+**Attachment:** [challenge.zip](https://github.com/user-attachments/files/19043268/challenge.zip)  
+**Password:** snyk-ftf-2025
 
 ## Writeup
 
