@@ -18,7 +18,7 @@ I don't know the port, but I do know the range, which makes it easy to enumerate
 
 ![Image](https://github.com/user-attachments/assets/0c32da75-c29c-4641-8e05-fbdcb26e7456)
 
-I used **BurpSuite** and **FoxyProxy** to intercept the POST request, I sent it to the **Intruder**, I modified the URL with "127.0.0.1", I added a **payload** to the **port** to find the right port and I started a **Sniper attack**:
+I used **BurpSuite** and **FoxyProxy** to intercept the POST request, I sent it to the **Intruder**, I modified the URL with "localhost", I added a **payload** to the **port** to find the right port and I started a **Sniper attack**:
 
 ![Image](https://github.com/user-attachments/assets/00ff3a59-71bf-4074-b959-b8174e920eb2)
 
@@ -26,3 +26,10 @@ In the **Payload tab**, I set the Payload type on **Numbers** and I added the **
 
 ![Image](https://github.com/user-attachments/assets/5a47a4ad-0f39-4e6f-b8fd-6cb3101646c9)
 
+Finally, with this URL I was able to get the flag:
+
+```bash
+http://localhost:1217/execute?cmd=cat /usr/src/app/flag.txt
+```
+
+**flag{e1c96ccca8777b15bd0b0c7795d018ed}**
