@@ -6,6 +6,8 @@
 
 ## Writeup
 
+![Image](https://github.com/user-attachments/assets/c965c8c5-d0ae-4614-ab9d-a87998345816)
+
 In the Dockerfile I can see where the flag is located:
 
 ![Image](https://github.com/user-attachments/assets/c9f0505b-c649-4d4c-a2d1-5f2cd9dfed4b)
