@@ -1,7 +1,7 @@
 # Unfurl
 ![Image](https://github.com/user-attachments/assets/95aef574-bae7-46c2-aab7-d6b2b50bc989)
 
-**Attachment:** [challenge.zip](https://github.com/user-attachments/files/19055047/challenge.zip)
+**Attachment:** [challenge.zip](https://github.com/user-attachments/files/19055047/challenge.zip)  
 **Password:** snyk-ftf-2025
 
 ## Writeup
