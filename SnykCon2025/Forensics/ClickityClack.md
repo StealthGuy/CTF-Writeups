@@ -1,7 +1,7 @@
 # ClickityClack
 ![Image](https://github.com/user-attachments/assets/5d524970-72b0-475d-b1f8-a45a9bfa73da)
 
-Attachment: [click.zip](https://github.com/user-attachments/files/19053567/click.zip)
+**Attachment:** [click.zip](https://github.com/user-attachments/files/19053567/click.zip)
 
 ## Writeup
 
