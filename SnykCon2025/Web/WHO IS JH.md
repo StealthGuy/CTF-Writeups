@@ -53,7 +53,7 @@ Continuing the code analysis, I can see that the conspiracy.php endpoint allows 
 
 This endpoint and its query parameter "language" is vulnerable, so I have a valid attack chain to upload a `file.jpg` with PHP code with **BurpSuite**, use the log to figure out the random name it was given and then use the conspiracy endpoint to include it and run my code.
 
-Intercepted the **POST request** in Burp, modified the **Content-Type** of the JPG image in the **Repeater** tab and successfully uploaded:
+I used **BurpSuite** and **FoxyProxy** to intercept the **POST request**, I sent it to the **Repeater**, I modified the **Content-Type** of the JPG image and I was able to successfully upload the image:
 
 ![Image](https://github.com/user-attachments/assets/ef4b7978-66a4-46da-8ca7-81d9302d644b)
 
