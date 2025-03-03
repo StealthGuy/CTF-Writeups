@@ -45,7 +45,7 @@ Anyway, the file upload is not very restricted. The extension is checked, but th
 
 Continuing the code analysis, I can see that the conspiracy.php endpoint allows the user to include a file based on the language parameter:
 
-![Image](https://github.com/user-attachments/assets/7bf2232c-e853-4a9d-9762-4be8824be023)
+![Image](https://github.com/user-attachments/assets/ca74b23e-72eb-4069-8139-b91d1d2f1e98)
 
 ![Image](https://github.com/user-attachments/assets/83fa5209-4bf5-4c5f-bbaf-8d83b8436fb5)
 
