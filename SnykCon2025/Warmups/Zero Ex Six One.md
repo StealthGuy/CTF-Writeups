@@ -6,7 +6,7 @@
 ## Writeup
 
 As the description suggest, I have to **XOR** the file that I was given in order to get the flag.  
-I used **[CyberChef](https://gchq.github.io/CyberChef/)** to decrypt the hex string, but what is the key? Looking closely at the title, we can see it: **0x61**.
+I used **[CyberChef](https://gchq.github.io/CyberChef/)** to decrypt the hex string, but what is the key? By looking closely at the title, we can see it: `0x61`.
 
 ![Image](https://github.com/user-attachments/assets/a137a977-67cb-4f78-8b5a-9715afa8b2e5)
 
