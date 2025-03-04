@@ -19,7 +19,7 @@ When we select "Request Time Off," we can enter our dates, provide a reason, and
 
 ![Image](https://github.com/user-attachments/assets/adf08440-c61e-4e94-90c0-2c5d3271012e)
 
-Basically, if I use a Path Traversal as the file name I can write the contents of `flag.txt` into the file I upload, whatever it is. In this case, with the path indicated in the Dockerfile:
+Basically, if I use a **Path Traversal** as the file name I can write the contents of `flag.txt` into the file I upload, whatever it is. In this case, with the path indicated in the Dockerfile:
 
 ```bash
 ../../../../..//timeoff_app/flag.txt
