@@ -27,7 +27,7 @@ The listed functions are used to execute system commands, specifically:
 - **popen($cmd, $mode)**: Opens a process and returns a handle to read/write to the command stream
 - **proc_open($cmd, $descriptorspec, &$pipes)**: Similar to popen(), but allows more granular control over process input/output
 
-Looking at the PHP source code, I can see that there is a pubblicy log file that I can access with directory "logs/site_log.txt":
+Looking at the PHP source code, I can see that there is a pubblicy log file that I can access with directory `logs/site_log.txt`:
 
 ![Image](https://github.com/user-attachments/assets/04c1cda4-8b8d-4e33-891f-73f1238f3d9b)
 
@@ -47,13 +47,13 @@ Anyway, the file upload is not very restricted. The extension is checked, but th
 
 ![Image](https://github.com/user-attachments/assets/71ad9320-31ed-4a7a-8b86-afe682e1a0ea)
 
-Continuing the code analysis, I can see that the conspiracy.php endpoint allows the user to include a file based on the language parameter:
+Continuing the code analysis, I can see that the `conspiracy.php` endpoint allows the user to include a file based on the language parameter:
 
 ![Image](https://github.com/user-attachments/assets/ca74b23e-72eb-4069-8139-b91d1d2f1e98)
 
 ![Image](https://github.com/user-attachments/assets/83fa5209-4bf5-4c5f-bbaf-8d83b8436fb5)
 
-This endpoint, along with its "language" query parameter, is vulnerable. This gives me a valid attack chain: I can upload a `file.jpg` containing PHP code using Burp Suite, check the log to find the random name assigned to it, and then use the "conspiracy" endpoint to include and execute my code:
+This endpoint, along with its `language` query parameter, is vulnerable. This gives me a valid attack chain: I can upload a `file.jpg` containing PHP code using Burp Suite, check the log to find the random name assigned to it, and then use the "conspiracy" endpoint to include and execute my code:
 
 I used **Burp Suite** and **FoxyProxy** to intercept the **POST request**. I sent it to the **Repeater**, modified the **Content-Type** of the JPG image and I was able to successfully upload the image:
 
