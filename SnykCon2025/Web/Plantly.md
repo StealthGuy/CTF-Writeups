@@ -25,11 +25,11 @@ If I add a random plant to my cart, enter a random "Custom Order Request", and p
 
 ![Image](https://github.com/user-attachments/assets/621c8f94-5f41-40c9-b702-56eccf989706)
 
-Interestingly, viewing the receipt displays my 'Custom Request' text as part of the receipt:
+Interestingly, viewing the receipt displays my "Custom Request" text as part of the receipt:
 
 ![Image](https://github.com/user-attachments/assets/085f3991-2569-4c9b-a0d0-7a20e874b759)
 
-Looking at the source code, I can already see the potential for **SSTI vulnerability** in "source.py" as **unsanitizied user input** is passed to `render_template_string`:
+Looking at the source code, I can already see the potential for **SSTI vulnerability** in `source.py` as **unsanitizied user input** is passed to `render_template_string`:
 
 ![Image](https://github.com/user-attachments/assets/79558027-4618-4eb1-93d8-1a2488df1ef5)
 
