@@ -6,11 +6,11 @@
 ## Writeup
 
 As the title and description suggest, this challenge is based on the [scream cipher](https://github.com/matthewpwatkins/scream-cipher).  
-I opened the .bin file in VSCode because if opened on a powershell terminal or bash the strange characters are not outputted correctly and won't decode to the flag.
+I opened the `.bin` file in VSCode because, if opened in a PowerShell or Bash terminal, the strange characters are not displayed correctly and won’t decode into the flag:
 
 ![Image](https://github.com/user-attachments/assets/b750cd16-14e7-4496-8ca6-4e93448bd617)
 
-Then I used [this online tool](https://scream-cipher.netlify.app/) to decode the strange text and get the flag.
+Then I used [this online tool](https://scream-cipher.netlify.app/) to decode the strange text and get the flag:
 
 ![Image](https://github.com/user-attachments/assets/241c523b-b298-44c3-ab4f-0428c2edc4f1)
 
