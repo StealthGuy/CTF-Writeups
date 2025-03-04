@@ -8,6 +8,8 @@
 
 ![Image](https://github.com/user-attachments/assets/c965c8c5-d0ae-4614-ab9d-a87998345816)
 
+"Who IS JH?" takes us to a page with several buttons, the most important ones being "Upload Evidence" and "The Conspiracy."
+
 In the Dockerfile I can see where the flag is located:
 
 ![Image](https://github.com/user-attachments/assets/c9f0505b-c649-4d4c-a2d1-5f2cd9dfed4b)
@@ -29,11 +31,11 @@ Looking at the PHP source code, I can see that there is a pubblicy log file that
 
 ![Image](https://github.com/user-attachments/assets/04c1cda4-8b8d-4e33-891f-73f1238f3d9b)
 
-I can upload an allowed image with extension JPG, PNG, GIF and see it in the log file:
+I can upload an allowed image with a JPG, PNG, or GIF extension and see it in the log file:
 
 ![Image](https://github.com/user-attachments/assets/9f050206-19a3-489a-afa4-010ba85ed7e8)
 
-With **curl** on the terminal:
+With **curl** in the terminal:
 
 ![Image](https://github.com/user-attachments/assets/aa4d2c69-97d0-42f1-86e1-735805f17dde)
 
@@ -51,9 +53,9 @@ Continuing the code analysis, I can see that the conspiracy.php endpoint allows 
 
 ![Image](https://github.com/user-attachments/assets/83fa5209-4bf5-4c5f-bbaf-8d83b8436fb5)
 
-This endpoint and its query parameter "language" is vulnerable, so I have a valid attack chain to upload a `file.jpg` with PHP code with **BurpSuite**, use the log to figure out the random name it was given and then use the conspiracy endpoint to include it and run my code.
+This endpoint, along with its "language" query parameter, is vulnerable. This gives me a valid attack chain: I can upload a `file.jpg` containing PHP code using Burp Suite, check the log to find the random name assigned to it, and then use the "conspiracy" endpoint to include and execute my code:
 
-I used **BurpSuite** and **FoxyProxy** to intercept the **POST request**, I sent it to the **Repeater**, I modified the **Content-Type** of the JPG image and I was able to successfully upload the image:
+I used **Burp Suite** and **FoxyProxy** to intercept the **POST request**. I sent it to the **Repeater**, modified the **Content-Type** of the JPG image and I was able to successfully upload the image:
 
 ![Image](https://github.com/user-attachments/assets/ef4b7978-66a4-46da-8ca7-81d9302d644b)
 
