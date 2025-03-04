@@ -8,12 +8,16 @@
 
 ![Image](https://github.com/user-attachments/assets/727cf9ff-8a67-4873-be48-c10cddbc877c)
 
-Looking at the source code, I can see that there's a filter for the `clientIP` in adminRoutes.js to ensure only the local host would access it.  
+"Unfurl" is a web app that retrieves metadata for any URL you provide. When you submit a URL, the server requests it and returns the corresponding metadata. If I visit the homepage and ask it to unfurl `https://www.google.com`, it does so without any issues:
+
+![Image](https://github.com/user-attachments/assets/0641a53b-e7fd-4069-8072-a08e35c753f9)
+
+Looking at the source code, I can see that there's a filter for `clientIP` in "adminRoutes.js" to ensure that only the localhost can access it.  
 In this specific case, I'm looking for an **SSRF vulnerability** that gives me command execution.
 
 ![Image](https://github.com/user-attachments/assets/d0ea2a35-eb57-4d11-81bc-036029ea8d23)
 
-Looking closely at admin.js, I can see that the internal app is running on a random port.  
+Looking closely at "admin.js", I can see that the internal app is running on a random port.  
 I don't know the port, but I do know the range, which makes it easy to enumerate:
 
 ![Image](https://github.com/user-attachments/assets/0c32da75-c29c-4641-8e05-fbdcb26e7456)
