@@ -13,7 +13,7 @@
 ![Image](https://github.com/user-attachments/assets/0641a53b-e7fd-4069-8072-a08e35c753f9)
 
 Looking at the source code, I can see that there's a filter for `clientIP` in "adminRoutes.js" to ensure that only the localhost can access it.  
-In this specific case, I'm looking for an **SSRF vulnerability** that gives me command execution.
+In this specific case, I'm looking for an **SSRF vulnerability** that gives me command execution:
 
 ![Image](https://github.com/user-attachments/assets/d0ea2a35-eb57-4d11-81bc-036029ea8d23)
 
