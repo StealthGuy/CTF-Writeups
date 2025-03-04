@@ -15,7 +15,7 @@ Time Off is a time management system that allows you to book holidays. We are pr
 
 ![Image](https://github.com/user-attachments/assets/ad5c4773-0a6e-465a-b4dc-a21ff6c837ae)
 
-When we select "Request Time Off," we can enter our dates, provide a reason, and upload a document. Interestingly, we have the ability to choose the file name of the document. Looking at the source code with the help of **[Snyk Extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension)** for Visual Studio Code, I can see that the "file_name" parameter is vulnerable to Path Traversal:
+When we select "Request Time Off," we can enter our dates, provide a reason, and upload a document. Interestingly, we have the ability to choose the file name of the document. Looking at the source code with the help of the **[Snyk Extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension)** for Visual Studio Code, I can see that the `file_name` parameter is vulnerable to Path Traversal:
 
 ![Image](https://github.com/user-attachments/assets/adf08440-c61e-4e94-90c0-2c5d3271012e)
 
