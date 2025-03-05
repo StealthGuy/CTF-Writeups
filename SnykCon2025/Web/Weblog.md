@@ -23,7 +23,7 @@ While reviewing the application's source code, I found a search function in `sea
 
 ![Image](https://github.com/user-attachments/assets/796117f1-c67a-4d65-a53a-817e1756e513)
 
-This specific code is vulnerable to **SQL Injection**, as confirmed by the [Snyk Extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension) for Visual Studio Code, and it directly dumps our query into the SQL query without any sanitization or checks.  
+This specific code is vulnerable to **SQL Injection**, as confirmed by the **[Snyk Extension](https://docs.snyk.io/scm-ide-and-ci-cd-integrations/snyk-ide-plugins-and-extensions/visual-studio-code-extension)** for Visual Studio Code, and it directly dumps our query into the SQL query without any sanitization or checks.  
 I verified that the app is vulnerable by searching for a **single apostrophe**, which returned me a detailed error message:
 
 ![Image](https://github.com/user-attachments/assets/4f77287e-bcbf-4a9a-a734-045cce8b9685)
