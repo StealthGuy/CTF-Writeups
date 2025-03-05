@@ -48,7 +48,7 @@ This means I can control this input. The web app is based on Flask, which is a P
 It worked! This means the payload is being evaluated by the server and reflected back to the user.  
 After reading some documentation [here](https://hacktricks.boitatech.com.br/pentesting-web/ssti-server-side-template-injection#jinja2-python), [here](https://www.onsecurity.io/blog/server-side-template-injection-with-jinja2/), and [here](https://swisskyrepo.github.io/PayloadsAllTheThings/Server%20Side%20Template%20Injection/Python/#jinja2-remote-command-execution), I crafted this simple payload to get the flag:
 
-```bash
+```text
 {{ self.__init__.__globals__.__builtins__.__import__('os').popen('cat flag.txt').read() }}
 ```
 
