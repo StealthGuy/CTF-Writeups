@@ -35,7 +35,7 @@ Now, even without the source code, I can see where my input is being injected in
 There’s also a comment here indicating that the passwords are **MD5 hashed**, so I knew I needed to focus on dumping the users table.  
 I used this **UNION Injection** payload:
 
-```bash
+```SQL
 ' UNION SELECT * FROM users-- 
 ```
 
@@ -45,7 +45,7 @@ I used this **UNION Injection** payload:
 
 Now that I got the MD5 hash for the admin account, I dumped it into **John the Ripper** to get the password:
 
-```bash
+```text
 john --format=raw-md5 --wordlist=rockyou.txt hash.txt
 ```
 
