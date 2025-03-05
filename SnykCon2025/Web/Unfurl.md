@@ -32,7 +32,7 @@ In the **Payload tab**, I set the Payload type on **Numbers** and I added the **
 
 Finally, with this URL I was able to get the flag:
 
-```bash
+```text
 http://localhost:1217/execute?cmd=cat /usr/src/app/flag.txt
 ```
 
