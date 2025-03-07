@@ -65,7 +65,7 @@ cat codes.txt | tac | python3 xs128p.py --multiple 10000000 --lead 6
 
 ![Image](https://github.com/user-attachments/assets/aeaf714c-bf75-4bb5-962d-07ff61378957)
 
-I generated the following OTPs using the seeds I retrieved:
+I generated the following OTPs using the seeds I retrieved and successfully invalidated the OTP generator:
 
 ```bash
 python3 xs128p.py --multiple 10000000 --gen 1155105234970035644,15775672274592191546,7
