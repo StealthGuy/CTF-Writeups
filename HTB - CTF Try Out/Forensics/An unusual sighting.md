@@ -5,9 +5,9 @@
 
 ## Writeup
 
-After connecting to the challenge using **Netcat**, we can see that we have to answer some questions in order to get the flag.
+After connecting to the challenge using **Netcat**, we can see that we need to answer some questions to get the flag.
 
-We are provided with two **log files**, `bash_history.txt` and `sshd.log`.
+We are provided with two **log files**: `bash_history.txt` and `sshd.log`.
 
 ![Image](https://github.com/user-attachments/assets/4d30c6ba-9785-4c99-b20f-6f9702f8bed8)
 
