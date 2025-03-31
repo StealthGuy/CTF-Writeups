@@ -7,7 +7,7 @@
 
 ![Image](https://github.com/user-attachments/assets/c4412262-699a-414f-9d09-f55fe469d428)
 
-After connecting with Netcat, we are provided with a web challenge based on **Buffer Overflow**.
+After connecting with **Netcat**, we are provided with a web challenge based on **Buffer Overflow**.
 We must provide a username, but our goal is log in as admin to retrieve the flag. To achieve this, we need to manipulate values in the program's memory to trigger the desired behavior.
 
 ![Image](https://github.com/user-attachments/assets/6dc25bfe-77ea-463a-b296-ddba34907f8c)
