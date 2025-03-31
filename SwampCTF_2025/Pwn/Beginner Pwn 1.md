@@ -12,8 +12,8 @@ We must provide a username, but our goal is log in as admin to retrieve the flag
 
 ![Image](https://github.com/user-attachments/assets/6dc25bfe-77ea-463a-b296-ddba34907f8c)
 
-The `is_admin` variable is a 4-byte array that likely determines administrator privileges: it currently has all values ​​set to `0x00`, so we are not an admin.
-The `username` variable is a 10-byte array. Due to the proximity of the two variables in memory, we can log in as admin and get the flag by inserting a username longer than 10 bytes (10 characters) and overwriting the values ​​of the `is_admin` variable.
+The `is_admin` variable is a 4-byte array that likely determines administrator privileges. Currently, all its values are ​​set to `0x00`, meaning we are not an admin.
+The `username` variable is a 10-byte array. Due to the proximity of these two variables in memory, we can log in as admin and get the flag by entering a username longer than 10 bytes (10 characters), thus overwriting the values ​​of the `is_admin` variable.
 
 ![Image](https://github.com/user-attachments/assets/f9f2e8c3-4ec2-4605-8f46-125595ead651)
 
