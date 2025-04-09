@@ -75,7 +75,7 @@ We can exploit this proximity between `p` and `q` to factorize `n` using **Ferma
 3. This allows us to factorize `n` as:
    - `n = (a + b)(a - b)` (where `a + b = q` and `a - b = p`)
   
-With the following Python, code I was able to retrieve the flag:
+With the following Python code, I was able to retrieve the flag:
 
 ```python
 import math
